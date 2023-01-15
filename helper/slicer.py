@@ -1,9 +1,9 @@
 import cv2
 import os
 cols = 7
-rows = 1
+rows = 2
 img = cv2.imread('src.png')
-folder = "../data/7"
+folder = "../data/8"
 if not os.path.exists(folder):
     os.makedirs(folder)
 i = 1
@@ -25,5 +25,5 @@ print(f'''
     rows: {rows},
     spacing: 0,
     tiles: setStandardTiles("{folder[2:]}", {cols}, {rows}),
-    srcImageAspectRatio: {round(img.shape[0] / img.shape[1], 1)}
+    srcImageAspectRatio: {round(img.shape[1] / img.shape[0], 1)}
 ''')
