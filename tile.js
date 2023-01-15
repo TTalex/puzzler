@@ -1,9 +1,8 @@
 class Tile {
-    constructor(x, y, tileSize, color, tileInfo, spacing=5) {
+    constructor(x, y, tileSize, tileInfo, spacing=5) {
         this.x = x;
         this.y = y;
         this.tileSize = tileSize;
-        this.color = color;
         this.selected = false;
         this.active = false;
         this.offset = {x: 0, y: 0};
@@ -18,7 +17,7 @@ class Tile {
         this.correctPositionInGrid = tileInfo.correctPositionInGrid;
     }
     draw(context) {
-        context.fillStyle = this.color;
+        context.fillStyle = "green";
         if (this.selected) {
             context.lineWidth = 2;
             context.globalAlpha = 0.5;

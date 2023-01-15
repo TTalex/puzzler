@@ -22,10 +22,9 @@ const setupTiles = (config) => {
             });
         }
     }
-    let hsl = (h, s, l) => `hsl(${h},${s}%,${l}%)`;
     for (let i = 0; i < config.tiles.length; i++) {
         let spot = availableSpots.splice(Math.floor(Math.random()*availableSpots.length), 1)[0];
-        tiles.push(new Tile(spot.x, spot.y, tileSize, hsl(Math.floor(Math.random() * 360), 100, 50), config.tiles[i], config.spacing));
+        tiles.push(new Tile(spot.x, spot.y, tileSize, config.tiles[i], config.spacing));
     }
 };
 
