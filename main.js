@@ -43,16 +43,23 @@ rounds.push({
     rows: 1,
     spacing: 0,
     tiles: setStandardTiles("data/5", 7, 1),
-    srcImageAspectRatio: 1.06
+    srcImageAspectRatio: 0.9
 });
 rounds.push({
     cols: 7,
     rows: 1,
     spacing: 0,
     tiles: setStandardTiles("data/6", 7, 1),
-    srcImageAspectRatio: 1.1
+    srcImageAspectRatio: 0.9
 });
-let index = rounds.length - 1;
+rounds.push({
+    cols: 7,
+    rows: 2,
+    spacing: 0,
+    tiles: setStandardTiles("/data/7", 7, 2),
+    srcImageAspectRatio: 3.5
+});
+let index = 0;
 setupTiles(rounds[index]);
 
 document.getElementById("next").addEventListener("click", () => {
