@@ -51,10 +51,12 @@ let updateCanvasSize = () => {
 };
 
 let getMouseCoords = (canvas, event) => {
-    let canvasCoords = canvas.getBoundingClientRect();
+    const canvasCoords = canvas.getBoundingClientRect();
+    const pageX = event.pageX != undefined ? event.pageX : event.changedTouches[0].pageX;
+    const pageY = event.pageY != undefined ? event.pageY : event.changedTouches[0].pageY;
     return {
-        x: Math.min(canvasCoords.right - 1, (event.pageX || event.changedTouches[0].pageX) - canvasCoords.left),
-        y: Math.min(canvasCoords.bottom - 1, (event.pageY || event.changedTouches[0].pageY) - canvasCoords.top)
+        x: Math.min(canvasCoords.right - 1, pageX - canvasCoords.left),
+        y: Math.min(canvasCoords.bottom - 1, pageY - canvasCoords.top)
     };
 };
 let getOffsetCoords = (mouse, rect) => {
