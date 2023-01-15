@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+canvascontainer {
+  margin: 20px;
+}

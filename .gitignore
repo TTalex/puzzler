@@ -1,0 +1,4 @@
+.jshintrc
+package*
+node_modules/*
+start.txt
