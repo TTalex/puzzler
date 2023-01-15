@@ -35,21 +35,21 @@ rounds.push({
     cols: 3,
     rows: 3,
     spacing: 0,
-    tiles: setStandardTiles("/data/4", 3, 3),
+    tiles: setStandardTiles("data/4", 3, 3),
     srcImageAspectRatio: 1
 });
 rounds.push({
     cols: 7,
     rows: 1,
     spacing: 0,
-    tiles: setStandardTiles("/data/5", 7, 1),
+    tiles: setStandardTiles("data/5", 7, 1),
     srcImageAspectRatio: 1.06
 });
 rounds.push({
     cols: 7,
     rows: 1,
     spacing: 0,
-    tiles: setStandardTiles("/data/6", 7, 1),
+    tiles: setStandardTiles("data/6", 7, 1),
     srcImageAspectRatio: 1.1
 });
 let index = rounds.length - 1;
