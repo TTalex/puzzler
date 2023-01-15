@@ -56,7 +56,7 @@ rounds.push({
     cols: 7,
     rows: 2,
     spacing: 0,
-    tiles: setStandardTiles("/data/7", 7, 2),
+    tiles: setStandardTiles("data/7", 7, 2),
     srcImageAspectRatio: 3.5
 });
 let index = 0;
