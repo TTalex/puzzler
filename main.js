@@ -59,7 +59,7 @@ rounds.push({
     tiles: setStandardTiles("data/7", 7, 2),
     srcImageAspectRatio: 3.5
 });
-let customTileset = setStandardTiles("/data/8", 4, 5);
+let customTileset = setStandardTiles("data/8", 4, 5);
 customTileset.splice(16,3)
 rounds.push({
     cols: 4,
